@@ -1,0 +1,151 @@
+[
+  {
+    "ts": "2026-03-13T13:58:00Z",
+    "agent": "que",
+    "label": "Control Room Scope",
+    "status": "success",
+    "summary": "Scoped the Transformious Control Room — unified AI activity dashboard. 4 phases: Feed+Cron (1d), Build Inspector (1d), Cross-app Metrics (1d), PaperClip Panel (0.5d). Emailed to lcole@transformious.com. Saved to /workspace/strategy/control-room/scope.md",
+    "tags": [
+      "strategy",
+      "email",
+      "control-room"
+    ]
+  },
+  {
+    "ts": "2026-03-13T13:53:00Z",
+    "agent": "claude-code",
+    "label": "1418 — Tournament Bracket",
+    "status": "success",
+    "summary": "Added full single-elimination knockout bracket (up to 16 players, seeded by HCP). Auto-generates rounds R16→QF→SF→Final. Tap to advance winners. Trophy animation for champion. Saves to event_results table. Triggered from MY EVENT Step 4 for Playoff/Championship events. Build passed. Deployed.",
+    "tags": [
+      "1418",
+      "build",
+      "deploy"
+    ],
+    "filesChanged": [
+      "src/App.jsx"
+    ],
+    "linesChanged": 128
+  },
+  {
+    "ts": "2026-03-13T13:50:00Z",
+    "agent": "que",
+    "label": "1418 Organizer Reminder Cron",
+    "status": "success",
+    "summary": "Created cron job '1418-organizer-reminder' — runs daily at 8 AM CST. Checks Supabase for events 7 or 14 days away, sends WhatsApp reminder to Lukeman with organizer name and action items.",
+    "tags": [
+      "1418",
+      "cron",
+      "whatsapp"
+    ]
+  },
+  {
+    "ts": "2026-03-13T13:45:00Z",
+    "agent": "que",
+    "label": "TeeSheet Strategy Decision",
+    "status": "success",
+    "summary": "Scoped TeeSheet as a standalone product (not a Transformious product). Lukeman confirmed. Saved to MEMORY.md. Path: build+pilot now (personal) → $2K MRR → incorporate TeeSheet LLC.",
+    "tags": [
+      "strategy",
+      "teesheet",
+      "memory"
+    ]
+  },
+  {
+    "ts": "2026-03-13T13:40:00Z",
+    "agent": "que",
+    "label": "Email Preferences Updated",
+    "status": "success",
+    "summary": "Saved Lukeman's email sending preferences: golf/personal = Lukeman@me.com, business = lcole@transformious.com. Updated MEMORY.md.",
+    "tags": [
+      "config",
+      "memory"
+    ]
+  },
+  {
+    "ts": "2026-03-13T13:35:00Z",
+    "agent": "claude-code",
+    "label": "1418 — Contest Holes (Step 2)",
+    "status": "success",
+    "summary": "Added CTP and Longest Drive hole setup section to Organizer Step 2. Gold card with hole # inputs, Save button upserts to contests table with toast confirmation. Build passed. Deployed to GitHub Pages.",
+    "tags": [
+      "1418",
+      "build",
+      "deploy"
+    ],
+    "filesChanged": [
+      "src/App.jsx"
+    ],
+    "linesChanged": 47
+  },
+  {
+    "ts": "2026-03-13T13:31:00Z",
+    "agent": "que",
+    "label": "Grint Connect Outreach",
+    "status": "success",
+    "summary": "Sent partnership inquiry email to contactus@thegrint.com from lcole@transformious.com. Sent follow-up from Lukeman@me.com (personal account). Saved draft to /workspace/1418-manager/outreach/grint-connect-email.md",
+    "tags": [
+      "1418",
+      "email",
+      "outreach"
+    ]
+  },
+  {
+    "ts": "2026-03-13T13:27:00Z",
+    "agent": "que",
+    "label": "Supabase SQL — Schema v2",
+    "status": "success",
+    "summary": "Wrote SQL for 4 new tables: event_results, achievements, predictions, contests. Lukeman ran in Supabase. All 4 tables created successfully.",
+    "tags": [
+      "1418",
+      "supabase",
+      "sql"
+    ]
+  },
+  {
+    "ts": "2026-03-13T13:22:00Z",
+    "agent": "que",
+    "label": "1418 Open Items Review",
+    "status": "success",
+    "summary": "Reviewed all open items from 1418 Manager: identified 4 SQL tables needed, 5 features, 3 admin tasks.",
+    "tags": [
+      "1418",
+      "review"
+    ]
+  },
+  {
+    "ts": "2026-03-13T13:15:00Z",
+    "agent": "que",
+    "label": "Claude Partner Network",
+    "status": "success",
+    "summary": "Researched Claude Partner Network fit for Transformious. Drafted full application package. Emailed to lcole@transformious.com with weekend action plan. Saved to /workspace/strategy/claude-partner-network/",
+    "tags": [
+      "strategy",
+      "email",
+      "anthropic"
+    ]
+  },
+  {
+    "ts": "2026-03-13T13:10:00Z",
+    "agent": "que",
+    "label": "Anthropic News Briefing",
+    "status": "success",
+    "summary": "Briefed Lukeman on Anthropic/Claude major news: Claude Partner Network ($100M, launched Mar 12), Pentagon lawsuit, Claude Code #1 coding tool at $2.5B ARR.",
+    "tags": [
+      "research",
+      "briefing"
+    ]
+  },
+  {
+    "ts": "2026-03-13T13:01:00Z",
+    "agent": "que",
+    "label": "Morning Brief",
+    "status": "success",
+    "summary": "2 blogs written and emailed to lcole@transformious.com. Topics: AI Agents in ERP (Oracle), The Mid-Market AI Tax.",
+    "tags": [
+      "cron",
+      "brief",
+      "blog"
+    ]
+  }
+]
